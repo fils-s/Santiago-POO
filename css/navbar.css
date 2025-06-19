@@ -1,0 +1,28 @@
+#mainNav {
+  background-color: #2A58A7;
+  box-shadow: 0px 0px 20px #2A58A7;
+}
+
+/* Nav links */
+#mainNav .nav-link,
+#btnLogin{
+
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+#btnLogin:hover,
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus {
+  color: #FFE149;
+}
+
+#mainNav .nav-link.active{
+    background-color: #1c3b71;
+  ;
+}
+
+#btnSignUp {
+    background-color:#FFE149;
+    border-radius: 20px;
+}

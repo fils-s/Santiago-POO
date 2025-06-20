@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals</title>
+</head>
+<body>
+    <!-- Modal de login -->
+    <div class="modal fade" id="mdlLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sessão</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="frmLogin">
+      <div class="modal-body">        
+        <div class="form-group">
+          <label for="txtUsername">Nome de utilizador</label>
+          <input type="text"class="form-control" id="txtUsername" placeholder="Insira um nome de utilizador" autocomplete="on"/>
+        </div>
+        <div class="form-group">
+          <label for="txtPassword">Password</label>
+          <input type="password" class="form-control" id="txtPassword" placeholder="Insira uma password" autocomplete="on"/>
+        </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn" id="btnLoginModal">Entrar</button>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col">
+                <div id="messageLogin"></div>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+
+ 
+    <!-- Modal de Register -->
+     <div class="modal fade" id="mdlRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Criar Conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <form id="frmRegister">
+          <div class="modal-body">
+            <div class="form-group">
+                <label for="txtUsernameRegister">Nome de utilizador</label>
+                <input type="text"class="form-control" id="txtUsernameRegister" placeholder="Insira um nome de utilizador" autocomplete="on"/>
+            </div>
+            <div class="form-group">
+                <label for="txtPasswordRegister">Password</label>
+                <input type="password" class="form-control" id="txtPasswordRegister" placeholder="Insira uma password" autocomplete="on"/>
+            </div>
+            <div class="form-group">
+                <label for="txtPasswordRegister2">Confirme Password</label>
+                <input type="password" class="form-control" id="txtPasswordRegister2" placeholder="Insira a password de novo" autocomplete="on"/>
+            </div> 
+            <div class="form-group">
+                <label for="profilePictureRegister">Foto de perfil</label>
+                <input type="text"class="form-control" id="profilePictureRegister" placeholder="Insira uma foto de perfil"autocomplete="on"/>
+            </div>            
+            </div>
+              <div class="modal-footer">
+            <button type="submit" class="btn" id="btnSignupModal">Registar</button>
+            </div>
+        </form>
+            <div class="row">
+                <div class="col">
+                    <div id="messageRegister"></div>
+                </div>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+
+</body>
+</html>

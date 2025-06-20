@@ -2,13 +2,12 @@ initData()
 
 function initData(){
     //Users
-
     if(!localStorage.users){
         const users = [
       {
         id: 1,
         username: "user1",
-        password: "pass1",
+        password: "Pass_987",
         userType: "regular",
         favourites: [],
         medals: [],
@@ -16,7 +15,7 @@ function initData(){
         comments: [],
       },
       {
-        id: 1,
+        id: 2,
         username: "user2",
         password: "pass2",
         userType: "regular",

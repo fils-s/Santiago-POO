@@ -1,0 +1,21 @@
+.img-home1 {
+    width: 100%;
+    height: 520px;
+    background-image: 
+        linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%),
+        url('https://www.turismo.gal/osdam/filestore/7/1/7/2/8_d0586468d6627c1/71728scr_b21dd1dc12b6c6a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#imgSecondaryContent {
+    width: 480px;
+    height: 234px;
+    background: url('https://viagem.cnnbrasil.com.br/wp-content/uploads/sites/5/2023/09/230829154445-06-body-camino-de-santiago-spain-pilgrimage-milestone.webp');
+    border-radius: 25px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

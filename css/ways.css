@@ -8,3 +8,12 @@
 .card img{
     border-radius: 10%;
 }
+
+.img-way1 {
+    width: 100%;
+    height: 240px;
+    background-image: url("https://www.vagamundos.pt/wp-content/uploads/2018/10/1-8-1-800x478.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

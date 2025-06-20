@@ -1,3 +1,28 @@
+let stages
+
+// carregar etapas do localStorage
+export function init() {
+    stages = localStorage.stages ? JSON.parse(localStorage.stages) : [];
+}
+
+
+// definir a etapa atual (para ver detalhes)
+export function setCurrentStage(id) {
+  localStorage.setItem("stage", id);
+}
+
+// obter a etapa atual
+export function getCurrentStage() {
+  return ways.find((stage) => stage.id === parseInt(localStorage.getItem("stage")));
+}
+
+// obter todos os caminhos
+export function getStages() {
+    return stages;
+}
+
+
+
 class Stage {
     constructor (id, location, coordinates, description, interestPoints, inns, ways, comments, images){
         this.id = id;

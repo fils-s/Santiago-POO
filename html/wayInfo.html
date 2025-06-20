@@ -7,12 +7,35 @@
     <!-- BOOTSRAP E OUTROS FICHEIROS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/ways.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav"></nav>
+    <br><br><br>
+    <!-- Título e primeira imagem -->
+    <h1>Caminho Português pela Costa</h1>
+    <div class="img-way1"></div> 
+
+    <!-- Descrição -->
+    <p>Este itinerário costeiro corre, em primeiro lugar, na direção oeste e avança paralelo ao rio Minho até chegar ao seu amplo estuário. A dominar a paisagem encontra-se o monte de Santa Trega, grande miradouro sobre o Atlântico e Portugal, célebre pelo seu incrível castro, parcialmente escavado, uma grande povoação que alcançou o seu auge durante a romanização. No sopé do monte, o porto d’A Guarda oferece um bom abrigo à sua frota pesqueira. </p>
+    <p>O itinerário avança paralelo à linha costeira, escarpada e agreste, em direção ao norte. Passa-se por Oia, localidade portuária célebre pelo seu mosteiro cisterciense; a igreja medieval conserva-se em bom estado e precede a sua entrada com uma nobre fachada barroca. O caminho dobra o Cabo Silleiro para penetrar num território mais resguardado, a bela ria de Vigo. Em primeiro lugar chega-se a Baiona, vila histórica de encantadoras ruas e praças, igreja do século XIII, capela barroca dedicada a santa Liberata e espetacular fortaleza de Monterreal, atualmente parador turístico. Foi a primeira localidade a conhecer o sucesso da primeira viagem de Colombo à América, quando a caravela Pinta chegou ao seu porto no dia 28 de fevereiro de 1493.</p>
+
+    <!-- Etapas -->
+
+    <!-- Mapa -->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+    function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
 
     <div id="modalContainer"></div>
-    <script src="./js/init.js"></script>
     <script>
     fetch('/html/modals.html')
         .then(res => res.text())
@@ -21,5 +44,6 @@
 
     <script type="module" src="/js/views/NavbarView.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ export function add(username, password, profilePicture) {
   let userID = users.length > 0 ? users[users.length - 1].id + 1 : 1;
   if(!profilePicture) profilePicture = "../img/profilepic.webp"
   if (users.some((user) => user.username === username)) {
-    throw Error(`User with username "${username}" already exists!`);
+    throw Error(`Utilizador com username "${username}" já existe!`);
   } else {
     users.push(new User(userID, username, password, "regular", [], [], profilePicture, []));
     localStorage.setItem("users", JSON.stringify(users));
